@@ -10,7 +10,7 @@ func _ready() -> void:
 
 func generate_animation() : 
 	var mob_type = $AnimatedSprite.frames.get_animation_names();
-	$AnimatedSprite.animation = mob_type[randi() % mob_type.size];
+	$AnimatedSprite.animation = mob_type[randi() % mob_type.size()];
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
